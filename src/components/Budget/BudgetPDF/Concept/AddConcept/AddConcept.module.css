@@ -1,0 +1,28 @@
+.addConcept{
+  padding: 8px 18px;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--box);
+  cursor: pointer;
+}
+
+.addConcept h1{
+  margin-left: 5px;
+  font-size: 12.5px;
+  cursor: pointer;
+}
+
+.addConcept:hover{
+  background-color: var(--box-hover);
+}
+
+.addConcept:active, .addConcept:focus{
+  background-color: var(--box-active);
+}
+
+.addConcept svg, .addConcept path{
+  cursor: pointer;
+}

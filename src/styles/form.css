@@ -1,0 +1,65 @@
+.ui.form{
+  width: 100% !important;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ui.form input, .ui.form textarea{
+  width: 100% !important;
+  font-size: small !important;
+  color: azure !important;
+  background-color: var(--background3) !important;
+}
+
+.ui.form textarea{
+  text-transform: initial !important;
+}
+
+.ui.label{
+  padding: 0;
+  color: var(--btn);
+  background-color: transparent !important;
+}
+
+.fields{
+  width: 80% !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.ui.form input:focus, .ui.form textarea:focus, .ui.form select:focus{
+  border-color: var(--box) !important;
+}
+
+.ui.form select{
+  font-size: small;
+  color: darkgray !important;
+  background-color: var(--background3) !important;
+}
+
+/* .field select:hover{
+  border-color: red !important;
+} */
+
+/* .ui.form input:focus, .ui.form textarea:focus{
+  border-color: darkgray !important;
+}
+
+
+
+
+.field{
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+.ui.form button{
+  font-weight: 200;
+} */
+
+

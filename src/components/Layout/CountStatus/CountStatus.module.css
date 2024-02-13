@@ -1,0 +1,56 @@
+.boxCount{
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.boxCount h4{
+  padding: 10px;
+  margin-right: 10px;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+.boxCount h4:hover{
+  background-color: var(--background2);
+}
+
+.boxCount h4:active, .boxCount h4:focus{
+  background-color: var(--background2);
+}
+
+.boxCount h4:nth-child(2){
+  color: var(--btn);
+  
+}
+
+.boxCount h4:nth-child(3){
+  color: var(--box);
+}
+
+.boxCountSelect{
+  background-color: var(--background1);
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+
+  .boxCount h4{
+    font-size: 12px;
+  }
+
+}
+
+@media screen and (min-width: 1200px){
+
+  .boxCount{
+    margin-top: 10px;
+  }
+
+  .boxCount h4{
+    font-size: 12px;
+  }
+
+}

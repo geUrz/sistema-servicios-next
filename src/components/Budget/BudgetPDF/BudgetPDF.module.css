@@ -1,0 +1,164 @@
+.containerMainPDF{
+  padding: 100px 0;
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: content-box;
+}
+
+.containerMainPDF > div{
+  padding: 0 50px;
+  width: 100%;
+  max-width: 700px;
+  height: 100%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  
+}
+
+.boxTop, .boxMid, .boxLow{
+  margin-top: 100px !important;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.boxTop h1{
+  color: black;
+  font-size: 14px;
+  font-weight: 600 !important;
+  
+}
+
+.boxTop h1:nth-child(6){
+  margin-top: 8px;
+}
+
+.boxTop h2{
+  color: black;
+  font-size: 14px;
+}
+
+.boxTop h2:nth-child(3){
+  margin-top: 8px;
+}
+
+.boxTop img{
+  height: 50px;
+}
+
+.boxMid{
+  margin-top: 60px !important;
+}
+
+.boxMidDos{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+}
+
+.boxMidDos1 h1{
+  font-family: 'Oswald' !important;
+  text-transform: uppercase !important;
+}
+
+.boxMid h1{
+  color: black;
+  font-size: 14px;
+  font-weight: 600 !important; 
+  text-transform: capitalize; 
+}
+
+.boxMid h2{
+  color: black;
+  font-size: 14px; 
+  text-transform: capitalize; 
+}
+
+.boxMidDos2{
+  margin-top: 10px;
+  display:flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.boxMidDos2 div:nth-child(1){
+  text-align: left;
+}
+
+.boxMidDos2 > div:nth-child(2){
+  text-align: right;
+}
+
+.boxLow{
+  margin-top: 50px !important;
+  flex-direction: column;
+}
+
+.boxRowUno, .boxRowDos, .boxRowTres{
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1.8px solid var(--box);
+}
+
+.boxRowDos{
+  border: none;
+}
+
+.boxRowUno div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxRowUno h1, .boxRowDos h1{
+  color: black;
+  font-size: 12.5px;
+  font-weight: 600 !important;
+}
+
+.boxRowUno div:nth-child(1){
+  width: 15%;
+}
+
+.boxRowUno div:nth-child(2){
+  padding-left: 10px;
+  width: 60%;
+  justify-content: flex-start;
+}
+
+.boxRowUno div:nth-child(3){
+  width: 8%;
+}
+
+.boxRowUno div:nth-child(4){
+  width: 12%;
+}
+
+
+.boxRowUno div:nth-child(5){
+  width: 12%;
+}
+
+.boxRowDos{
+  width: 100%;
+  height: auto;
+}
+
+.boxRowTres{
+  margin-top: 30px;
+  justify-content: center;
+  border-bottom: none;
+}

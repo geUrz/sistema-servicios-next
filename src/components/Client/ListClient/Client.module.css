@@ -1,0 +1,84 @@
+.boxRow{
+  width: 100%;
+  min-height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxRow:hover{
+  background-color: var(--background2);
+}
+
+.boxRow h1{
+  font-size: 10px;
+}
+
+.boxRow > div{
+  padding: 10px 0;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.boxRow > div:nth-child(1){
+  padding-left: 6.5px !important;
+  width: 30%;
+}
+
+.boxRow > div:nth-child(2){
+  padding-left: 2px !important;
+  width: 20%;
+}
+
+.boxRow > div:nth-child(3){
+  width: 30%;
+  font-size: 8px;
+}
+
+.boxRow > div:nth-child(3) h1{
+  font-size: 8px;
+}
+
+.boxRow > div:nth-child(4){
+  width: 60%;
+}
+
+.boxRow > div:nth-child(5){
+  width: 18%;
+  justify-content: space-between;
+}
+
+.containerActions{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.containerActions a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerActions svg, .containerActions path{
+  color: var(--box);
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.iconTrash path{
+  color: var(--btn);
+}
+
+
+@media screen and (min-width: 800px) {
+
+  .boxRow > div:nth-child(5){
+    width: 12%;
+    justify-content: center;
+  }
+
+}

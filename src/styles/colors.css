@@ -1,0 +1,16 @@
+:root{
+  --background1: rgba(20, 20, 20);
+  --background2: rgba(30, 30, 30);
+  --background3: rgba(40, 40, 40);
+  --background4: rgba(50, 50, 50);
+  --background5: rgba(60, 60, 60);
+  --box-bg:  rgb(0, 127, 224);
+  --box:  rgb(0, 134, 234);
+  --box-hover:  rgb(0, 145, 245);
+  --box-active:  rgb(12, 158, 255);
+  --btn:  rgb(254, 126, 0);
+  --btn-hover:  rgb(255, 133, 12);
+  --btn-active:  rgb(255, 148, 41);
+
+}
+

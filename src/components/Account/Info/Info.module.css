@@ -1,0 +1,37 @@
+.containerInfo{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxInfo{
+  width: 250px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.boxInfo div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxInfo svg, .boxInfo path{
+  font-size: 50px;
+}
+
+.boxInfo h1{
+  color: darkgoldenrod;
+  font-size: 20px;
+}
+
+.boxInfo h2{
+  font-size: 14px;
+}

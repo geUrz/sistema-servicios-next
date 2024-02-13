@@ -1,0 +1,17 @@
+.titleLetter{
+  margin-bottom: 12px;
+  color: darkgoldenrod;
+  font-size: small;
+  text-align: center;
+}
+
+.boxClose{
+  font-size: large;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.boxClose svg, .boxClose path{
+  cursor: pointer;
+}

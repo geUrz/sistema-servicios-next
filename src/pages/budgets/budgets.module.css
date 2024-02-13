@@ -1,0 +1,87 @@
+.containerBudget{
+  padding: 0 10px;
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxListBudget{
+  padding-bottom: 10px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 5px;
+  background-color: var(--background1);
+}
+
+.boxListBudget{
+  max-width: 900px;
+}
+
+.boxRow{
+  padding: 10px 0;
+  width: 100%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1.5px solid var(--box);
+}
+
+.boxListBudget{
+  margin-top: 15px;
+}
+
+.boxRow > div:nth-child(1), .boxRow > div:nth-child(2){
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.boxRow > div:nth-child(1){
+  padding-left: 10px;
+  width: 40%;
+}
+
+.boxRow > div:nth-child(2){
+  padding-left: 2px;
+  width: 60%;
+}
+
+.boxRow > div:nth-child(3){
+  width: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxRow h1{
+  color: var(--box);
+  font-size: 10px;
+  font-weight: 600 !important;
+}
+
+.boxRow > div:nth-child(4){
+  width: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxRow > div:nth-child(4) svg, .boxRow > div:nth-child(4) path{
+  color: var(--box);
+  font-size: 14px;
+}
+
+@media screen and (min-width: 1200px){
+
+
+}
+

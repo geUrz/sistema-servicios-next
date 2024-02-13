@@ -1,0 +1,108 @@
+.containerClient{
+  padding: 0 10px;
+  margin-top: 25px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxListClient{
+  padding-bottom: 10px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 5px;
+  background-color: var(--background1);
+}
+
+.boxListClient{
+  max-width: 900px;
+}
+
+.boxRow{
+  width: 100%;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1.5px solid var(--box);
+}
+
+.boxListService{
+  margin-top: 15px;
+}
+
+.boxRow > div{
+  padding: 10px 0;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.boxRow > div:nth-child(1){
+  padding-left: 6.5px !important;
+  width: 30%;
+}
+
+.boxRow > div:nth-child(2){
+  padding-left: 2px !important;
+  width: 20%;
+}
+
+.boxRow > div:nth-child(3){
+  width: 30%;
+}
+
+.boxRow > div:nth-child(4){
+  width: 60%;
+}
+
+.boxRow > div:nth-child(5){
+  width: 18%;
+  justify-content: center;
+}
+
+.boxRow h1{
+  color: var(--box);
+  font-size: 10px;
+  font-weight: 600 !important;
+}
+
+
+.boxRow > div:nth-child(5) svg, .boxRow > div:nth-child(5) path{
+  color: var(--box);
+  font-size: 14px;
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+
+  .boxRow h1{
+    font-size: 12px;
+  }
+
+  .boxRow > div:nth-child(5){
+    width: 15%;
+    justify-content: center;
+  }
+
+}
+
+@media screen and (min-width: 1200px){
+
+  .boxRow h1{
+    font-size: 12px;
+  }
+
+  .boxRow > div:nth-child(5){
+    width: 12%;
+    justify-content: center;
+  }
+
+}

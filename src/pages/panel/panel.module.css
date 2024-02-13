@@ -1,0 +1,30 @@
+.containerCat{
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerCat > div{
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerCat svg, .containerCat path{
+  font-size: 25px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 800px){
+
+  .containerCat > div{
+    max-width: 750px;
+  }
+
+}

@@ -1,0 +1,125 @@
+.containerFooter{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.containerFooter > div{
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.boxVisited h1{
+  color: darkgoldenrod;
+  font-size: 20px;
+  font-family: 'Bebas' !important;
+  font-weight: 200;
+}
+
+.containerUbicacion, .containerSiguenos{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerSiguenos{
+  margin-top: 30px;
+}
+
+.containerUbicacion img{
+  margin-bottom: 20px;
+  height: 100px;
+}
+
+
+.boxSiguenos{
+  padding: 10px;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerUbicacion h4{
+  margin: 0;
+  font-size: 11px;
+  font-weight: 200;
+}
+
+.boxSiguenos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.boxSiguenos svg, .boxSiguenos path{
+  margin: 0 8px;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.titleSiguenos h4{
+  font-size: 12.5px;
+  font-weight: 200;
+}
+
+.copy{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 20px;
+}
+
+.copy h4{
+  font-size: 8.5px;
+  font-weight: 200;
+}
+
+@media screen and (min-width: 800px){
+
+  .containerFooter > div{
+    height: 400px;
+  }
+
+  .boxVisited h1{
+    font-size: 22.5px;
+  }
+
+  .containerUbicacion img{
+    margin-bottom: 20px;
+    height: 120px;
+  }
+
+  .containerUbicacion h4{
+    font-size: 14px;
+  }
+
+  .titleSiguenos h4{
+    font-size: 14px;
+  }
+
+  .boxSiguenos svg, .boxSiguenos path{
+    margin: 0 8px;
+    font-size: 30px;
+  }
+
+  .copy h4{
+    font-size: 10px;
+  }
+  
+
+}
