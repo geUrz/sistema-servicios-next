@@ -1,56 +1,44 @@
-import { useEffect, useState } from 'react'
-import { Loading } from '@/components/Layout/Loading'
-import { map, size } from 'lodash'
-import { Budgets } from '@/api'
-import { Concept } from './Concept'
-import { ListEmpty } from '@/components/Layout/ListEmpty'
-import styles from './ListConcept.module.css'
+import { useEffect, useState } from "react";
+import { Loading } from "@/components/Layout/Loading";
+import { map, size } from "lodash";
+import { Concepts } from "@/api";
+import { Concept } from "./Concept";
+import { ListEmpty } from "@/components/Layout/ListEmpty";
+import styles from "./ListConcept.module.css";
 
-const listconceptCtrl = new Budgets()
+const conceptsCtrl = new Concepts();
 
 export function ListConcept(props) {
+  const { reload, onReload, budgetId } = props;
 
-  const { reload, onReload } = props
-
-  const [listconcepts, setListconcepts] = useState(null)
+  const [listconcepts, setListconcepts] = useState(null);
 
   useEffect(() => {
     (async () => {
       try {
-        const response = await listconceptCtrl.getAll()
-        setListconcepts(response.data)
-
+        const response = await conceptsCtrl.filterByBudget(budgetId);
+        setListconcepts(response.data);
       } catch (error) {
-        console.error(error)
+        console.error(error);
       }
-      
-    })()
-    
-  }, [reload])
+    })();
+  }, [reload]);
 
   return (
-    
     <>
-      {!listconcepts  ? (
+      {!listconcepts ? (
         <Loading />
-      ) :
-      size(listconcepts) === 0 ? (
+      ) : size(listconcepts) === 0 ? (
         <ListEmpty />
       ) : (
         <>
-        <div className={styles.mainListsong}>
-          {map(listconcepts, (listconcept) => (
-            <Concept
-              key={listconcept.id} 
-              conceptId={listconcept.id}
-              concept={listconcept.attributes}  
-              onReload={onReload}
-            />
-          ))}
-        </div>
-      </>
-      )} 
+          <div className={styles.mainListsong}>
+            {map(listconcepts, (listconcept) => (
+              <Concept key={listconcept.id} conceptId={listconcept.id} concept={listconcept.attributes} onReload={onReload} />
+            ))}
+          </div>
+        </>
+      )}
     </>
-
-  )
+  );
 }
